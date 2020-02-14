@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      ul {
+        list-style: none;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        background-color: #333;
+        color: white;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+        margin-left: 100px;
+      }
+      .logo > img {
+        width: 120px;
+        height: 30px;
+      }
+      .header > ul {
+        display: flex;
+        margin-right: 100px;
+      }
+      .header > ul > li {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+      }
+      .content {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        border: 1px solid red;
+        display: flex;
+      }
+      .content > aside {
+        border: 1px solid #ccc;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .content > aside > div:first-child {
+        width: 150px;
+        height: 200px;
+        background-color: olive;
+      }
+      .content > aside > div:last-child {
+        width: 150px;
+        height: 150px;
+        background-color: black;
+        margin-top: 20px;
+      }
+      .content > mian {
+        height: 400px;
+        border: 1px solid black;
+        flex-grow: 1;
+      }
+      .content > div {
+        width: 100px;
+        border: 1px solid green;
+      }
+      .imagesList {
+        width: 800px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .imagesList > .x {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -12px;
+      }
+      .imagesList > .x > div {
+        width: 191px;
+        height: 191px;
+        border: 1px solid orchid;
+        margin-right: 12px;
+        margin-top: 5px;
+      }</style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="https://static.xiedaimala.com/xdml/cdn/assets/white-logo-1a762b425df663fbccee710fe08d66951cea2fbc0a0350f03446ab30462e739f.png" alt="写代码啦!">
+      </div>
+      <ul>
+        <li>首页</li>
+        <li>课程</li>
+        <li>优惠</li>
+        <li>关于</li>
+      </ul>
+    </header>
+    <div class="content">
+      <aside>
+        <div>侧边栏上</div>
+        <div>侧边栏下</div>
+      </aside>
+      <mian>主要内容</mian>
+      <div>侧边内容</div>
+    </div>
+    <div class="imagesList">
+      <div class="x">
+        <div>图片1</div>
+        <div>图片2</div>
+        <div>图片3</div>
+        <div>图片4</div>
+        <div>图片5</div>
+        <div>图片6</div>
+        <div>图片7</div>
+        <div>图片8</div>
+      </div>
+    </div>
+  </body>
+</html>
