@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      . {
+        padding: 0;
+        margin: 0;
+        box-sizing: content-box;
+      }
+      .container {
+        width: 500px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid red;
+        position: relative;
+      }
+      .container > .close {
+        position: absolute;
+        background-color: blue;
+        padding: 5px 10px;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+      }
+      .container > button {
+        position: relative;
+        top: 50px;
+        left: 50px;
+      }
+      .container > button > span {
+        position: absolute;
+        border: 1px solid red;
+        white-space: nowrap;
+        bottom: calc(100% + 10px);
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .container > button > span {
+        display: none;
+      }
+      .container > button:hover span {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <span class="close">X</span>
+      <button>
+        点击
+        <span>提示内容</span>
+      </button>
+    </div>
+  </body>
+</html>
